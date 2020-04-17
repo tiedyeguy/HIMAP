@@ -18,7 +18,7 @@ void setup() {
   delay(10);
 
   // We start by connecting to a WiFi network
-  WiFiMulti.addAP("NETGEAR82", "#$RT1975Kpmg$");
+  WiFiMulti.addAP(/*your SSID here*/, /*your password here*/); // removed for security
 
   Serial.println();
   Serial.println();
@@ -37,7 +37,7 @@ void setup() {
   delay(500);
 
   const uint16_t port = 12345;
-  const char * host = "67.220.19.208"; // ip or dns
+  const char * host = ""; // ip or dns, removed for security
 
   Serial.print("connecting to ");
   Serial.println(host);
